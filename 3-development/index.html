@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미선 웹 | 퍼블리셔</title>
+    <!-- 구글 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">  
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css_home.css">
+    <link rel="icon" type="image/png" href="./images/logo-lamp.png">
+    <!-- 자바 스크립트 -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="./js/script_home.js"></script>
+</head>
+<body>
+    
+    <header id="header">
+        <div id="header-wrap">
+            <div id="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="myname-logo"></a>
+            </div> <!--#logo-->
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_story.html">Story</a></li>
+                <li><a href="index_works.html">Works</a></li>
+                <li><a href="index_contact.html">Contact</a></li>
+            </ul> <!--#nav-->
+        </div><!--#header-wrap-->
+    </header> <!--#header-->
+    
+    <main id="main">
+
+        <div id="desk-wrap">
+
+            <div class="desk off">
+                <img src="./images/1.home.png" alt="desk-off">
+            </div><!--.desk off-->
+
+            <div class="desk on">
+                <img src="./images/2.home.png" alt="desk-on">
+                <div id="blind-wrap">
+                    <span><img src="./images/blind7.png" alt="blind-top"></span>
+                    <span><img src="./images/blind6.png" alt="blind"></span>
+                    <span><img src="./images/blind5.png" alt="blind"></span>
+                    <span><img src="./images/blind4.png" alt="blind"></span>
+                    <span><img src="./images/blind3.png" alt="blind"></span>
+                    <span><img src="./images/blind2.png" alt="blind"></span>
+                    <span><img src="./images/blind1.png" alt="blind-bottom"></span>
+                </div><!--#blind-wrap-->
+                <div id="lamp-light">
+                    <img src="./images/2.home-light.png" alt="lamplight">
+                    <h1 class="hello"></h1><!--.hello-->
+                </div><!--#lamp-light-->
+            </div><!--.desk on-->
+        
+            <div id="scrolldown">
+                <div class="scroll">
+                    <span class="wheel"></span>
+                </div><!--.scroll-->
+            </div><!--#scrolldown-->
+
+        </div><!--#desk-wrap-->
+        <div id="overlay"></div>
+    </main>
+</body>
+</html>

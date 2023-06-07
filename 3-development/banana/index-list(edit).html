@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빙그레 바나나맛우유</title>
+  <!-- google font 적용 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+  rel="stylesheet">
+  <!-- style sheet 적용 -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/list(edit).css">
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="./js/script-list.js"></script>
+</head>
+<body>
+  <header>
+    <div id="header-wrap">
+      <div id="logo">
+        <a href="./index.html">
+          <img src="./images/binggrae-logo.png" alt="Binggrae-logo">
+        </a>
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="./index-info.html">회사소개</a></li>
+          <li><a href="#">제품소개</a></li>
+          <li><a href="./index-list(edit).html">이벤트</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <div>
+          <div id="language">KR</div>
+          <div id="hamburger"></div>
+        </div>
+      </div><!--#nav-wrap-->
+    </div><!--#header-wrap-->
+  </header>
+
+  <section id="banner">
+
+    <div id="banner-txt">
+      <h2>단지 레시피</h2>
+    </div><!--#banner-txt-->
+    
+  </section><!--#banner-->
+
+  <section id="content">
+    
+    <div id="recipe-txt">
+      <h1 class="text hidden">My Taste <span>Recipe</span></h1>
+      <p class="text hidden">빙그레의 단지 우유를 색다르게 즐기고 싶다면?</p>
+    </div><!--#recipe-txt-->
+
+    <div id="youtube">
+      <iframe width="900" height="500" src="https://www.youtube.com/embed/mjPVFpx8lD0" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+      clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </div><!--#youtube-->
+
+    <div id="buttons">
+      <ul>
+        <li class="button">
+          <button class="filter-button selected" data-target="all">전체보기</button>
+        </li>
+        <li class="button">
+          <button class="filter-button" data-target="drink">음료</button>
+        </li>
+        <li class="button">
+          <button class="filter-button" data-target="dessert">디저트</button>
+        </li>
+      </ul>
+    </div><!--#buttons-->
+
+    <div id="videos">
+      <ul id="video-wrap">
+        <li class="content" data-category="dessert">
+          <a href="https://youtu.be/5jq1DERPaMM">
+            <div class="thumbnail">
+              <p class="thumb-img con1"></p>
+              <div class="videos-txt">
+                <p>디저트</p>
+                <p>바나나맛우유 팬케이크</p>
+              </div><!--.videos-txt-->
+            </div> <!--.thumbnail-->
+          </a>
+        </li>
+        <li class="content" data-category="drink">
+          <a href="https://youtu.be/mjPVFpx8lD0">
+            <div class="thumbnail">
+              <p class="thumb-img con2"></p>
+              <div class="videos-txt">
+                <p>음료</p>
+                <p>바나나맛우유 쉐이크</p>
+              </div><!--.videos-txt-->
+            </div> <!--.thumbnail-->
+          </a>
+        </li>
+        <li class="content" data-category="drink">
+          <a href="https://youtu.be/wRQ7_RXZSPI">
+            <div class="thumbnail">
+              <p class="thumb-img con3"></p>
+              <div class="videos-txt">
+                <p>음료</p>
+                <p>바나나맛우유 라떼</p>
+              </div><!--.videos-txt-->
+            </div> <!--.thumbnail-->
+          </a>
+        </li>
+        <li class="content" data-category="dessert">
+          <a href="https://youtu.be/we0XgNspeLk">
+            <div class="thumbnail">
+              <p class="thumb-img con4"></p>
+              <div class="videos-txt">
+                <p>디저트</p>
+                <p>바나나맛우유 푸딩</p>
+              </div><!--.videos-txt-->
+            </div> <!--.thumbnail-->
+          </a>
+        </li>
+      </ul><!--#video-wrap-->
+    </div><!--#videos-->
+
+  </section>
+
+  <section id="shortcut">
+
+    <div id="shortcut-wrap">
+      <div id="p-wrap">
+        <p id="left">
+          <img src="./images/left.png">
+        </p>
+        <p id="right">
+          <img src="./images/right.png">
+        </p>
+      </div><!--#p-wrap-->
+      <div id="shortcut-txt">
+        <p>
+          이 외 단지의 다른 영상도 궁금하신가요?<br>
+          바나나맛우유 안녕단지 유튜브 채널로 이동하세요!
+        </p>
+        <button><a href="https://www.youtube.com/@hellodanji" target="_blank">유튜브 채널 바로가기</a></button>
+      </div> <!--#shortcut-txt-->
+    </div> <!--#shortcut-wrap-->
+    <div id="ft-shape"></div>
+  </section><!--#shortcut-->
+
+  <footer>
+
+    <div id="footer-wrap">
+
+      <div id="address-wrap">
+
+        <ul id="community">
+          <li>
+            고객센터
+          </li>
+          <li>
+            전화 : 080-022-0056(월~금 09:00~17:30/공휴일제외)
+          </li>
+        </ul><!--#community-->
+
+        <ul id="address">
+          <li>
+            빙그레
+          </li>
+          <li>
+            경기도 남양주시 다산동 4344-3/경기도 남양주시 다산순환로 45(다산동)
+          </li>
+        </ul><!--#address-->
+
+        <ul id="sns">
+          <li>
+            <a href="http://www.instagram.com/binggraekorea" target="_blank"><img src="./images/instargram.png" alt="binggrae-insta"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@official.binggrae" target="_blank"><img src="./images/youtube.png" alt="binggrae-youtube"></a>
+          </li>
+          <li>
+            <a href="https://www.tftmall.co.kr/main/index.php" target="_blank"><img src="./images/tft.png" alt="binggrae-tftmall"></a>
+          </li>
+        </ul><!--#sns-->
+      </div><!--#address-wrap-->
+
+      <ul id="info">
+        <li>
+          <a href="#">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="#">오시는길</a>
+        </li>
+      </ul><!--#info-->
+
+      <div id="copy">
+        ⓒ Binggrae all rights reserved.
+      </div> <!--#copy-->
+
+    </div><!--#footer-wrap-->
+
+  </footer>
+</body>
+</html>

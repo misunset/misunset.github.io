@@ -1,0 +1,357 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body, html {
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  height: 100%;
+}
+header {
+  background-color: #f4eed1;
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+  transition-duration: 800ms;
+}
+header.fixed + section {
+  margin-top: 80px;
+}
+#header-wrap {
+  width: 1200px; height: 80px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#logo {
+  float: left;
+  width: 20%;
+}
+#logo > a > img {
+  display: block;
+  width: 70%; margin: 0 auto;
+}
+#header-wrap::after {
+  content: ""; display: block; clear: both;
+}
+#nav {
+  width: 60%;
+  float: right;
+}
+#nav > ul {
+  width: 80%; height: 40px;
+  float: left;
+}
+#nav > ul > li {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+  text-align: center;
+}
+#nav > ul > li > a {
+  font-size: 16px;
+  text-align: center;
+}
+#nav > ul > li > a:hover {
+  color: #d3372a;
+}
+#nav::after {
+  content: ""; display: block; clear: both;
+}
+#language {
+  width: 10%;
+  font-weight: 700;
+  float: left;
+}
+#hamburger {
+  width: 10%;
+  float: left;
+
+}
+
+
+
+/* banner */
+#banner {
+  width: 100%; height: 460px;
+  background-image: url('../images/list-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner-txt {
+  padding: 210px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+#banner-txt > h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* taste recipe */
+#content {
+  padding: 120px 0 50px 0;
+}
+.hidden {
+  opacity: 0;
+  transition-duration: 1.3s;
+}
+.visible {
+  opacity: 1;
+  transition-duration: 1s;
+}
+#recipe-txt {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+#recipe-txt > h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#recipe-txt > h1 > span {
+  color: #f8d700;/* #f9e24c; */
+}
+#recipe-txt > p {
+  font-size: 25px;
+  font-weight: 500;
+}
+#youtube {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+#buttons {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#buttons::after {content: ""; display: block; clear: both;}
+#buttons > ul {
+  width: 40%;
+}
+#buttons > ul::after {content: ""; display: block; clear: both;}
+.button {
+  float: left;
+}
+.button > button {
+  width: 135px; height: 60px;
+  background: inherit ; 
+  border: none;
+  border-radius: 50px;
+  padding:15px 20px; 
+  cursor:pointer;
+  box-shadow:none;
+  background-color: #f4eed1;
+  font-size: 1.2em; font-weight: 600;
+}
+.button:hover > button {
+  background-color: #f8d700;
+}
+#buttons .selected {
+  background-color: #f8d700;
+}
+#videos {
+  width: 1200px;
+  margin: 0 auto;
+}
+#video-wrap {
+  width: 100%;
+}
+#video-wrap::after {content: ""; display: block; clear: both;}
+#video-wrap > li {
+  width: 30%; 
+  float: left;
+  margin: 0 20px;
+}
+#video-wrap > li > a {
+  width: 100%;
+  display: block;
+}
+/* .thumbnail {
+  width: 100%; height: 100%;
+} */
+.thumb-img {
+  height: 290px;
+}
+.con1 {
+  background-image: url('../images/youtube-pancake.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con2 {
+  background-image: url('../images/youtube-shake.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con3 {
+  background-image: url('../images/youtube-latte.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.con4 {
+  background-image: url('../images/youtube-pudding.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.videos-txt {
+  padding: 15px 0 20px 0;
+  line-height: 1.5;
+}
+.videos-txt > p:first-child {
+  background-color: #c9c4bb;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 20px;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.videos-txt > p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+/* shortcut */
+#shortcut {
+  padding-top: 50px;
+  background-image: url('../images/shortcut-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+#shortcut-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#p-wrap {
+  float: left;
+  width: 30%; height: 150px;
+  position: relative;
+}
+#left {
+  display: inline-block;
+  margin: -7% 0 0 -20%;
+  width: 30%;
+  animation: shake 2s infinite;
+  transform-origin: right bottom;
+}
+@keyframes shake {
+  0%, 100% { transform: rotate(-15deg);}
+  50% {transform: rotate(10deg);}
+}
+#right {
+  margin: -55% 0 0 75%;
+  width: 18%; display: block;
+  animation: updown 2s infinite;
+  transform-origin: bottom center;
+}
+@keyframes updown {
+  0%, 100% { transform: rotate(0deg);}
+  50% {transform: rotate(30deg);}
+}
+#left > img, #right > img {width: 100%;}
+#shortcut-wrap::after { content: ""; display: block; clear: both;}
+#shortcut-txt {
+  float: right;
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px 40px;
+}
+#shortcut-txt > p {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+#shortcut-txt > button {
+  display: block;
+  margin: 0 auto;
+  background-color: #f8d700;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding:15px 40px; cursor:pointer;
+  box-shadow:none;
+}
+#shortcut-txt > button:hover { background-color: #f5eece; transition-duration: 300ms;}
+#ft-shape {
+  background-image: url('../images/ft-shape.png');
+  width: 100%; height: 100px;
+  margin-top: 30px;
+}
+
+/* footer */
+footer {
+  background-color: #007401;
+}
+#footer-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  color: #f5eece;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 60px 10px;
+  line-height: 2;
+}
+#address-wrap {
+  width: 100%;
+  padding-bottom: 30px;
+}
+#community {
+  display: inline-block;
+  width: 40%;
+}
+#address { 
+  display: inline-block;
+  width: 40%;
+}
+#sns {
+  display: inline-block;
+  width: 19%;
+}
+#sns::after { content: ""; display: block; clear: both;}
+#sns > li {
+  width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 30px;
+}
+/* #sns > li:not(:last-child) {
+  padding: 5px 0;
+} */
+#sns > li > a {
+  display: block;
+}
+#sns > li > a > img {
+  width: 50%;
+  display: block;
+}
+#info {
+  width: 100%;
+  padding: 30px 0;
+}
+#info > li {
+  display: inline;
+  margin-right: 50px;
+}
+#copy {
+  padding: 30px 0;
+}

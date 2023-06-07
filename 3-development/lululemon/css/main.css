@@ -1,0 +1,513 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#header-wrap {
+  width: 1200px; height: 100px;
+  margin: 0 auto;
+}
+#menu {
+  width: 50%;
+  float: left;
+}
+#logo {
+  width: 30%;
+  float: left;
+  margin: 25px 0;
+}
+#logo > a {
+  display: block;
+}
+#logo > a > img {
+  width: 90%;
+  padding: 6px 0;
+  display: block;
+}
+#nav {
+  width: 70%;
+  height: 50px;
+  float: left;
+  margin: 25px 0;
+}
+#nav > li { 
+  display: inline-block;
+  margin: 0 2.7%;
+}
+#nav > li > a {
+  display: block;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 50px;
+}
+#header-wrap::after {content: ""; display: block; clear: both;}
+
+#pictogram {
+  width: 40%;
+  float: right;
+}
+#pictogram::after {
+  content: ""; display: block; clear: both;
+}
+#search {
+  width: 40%;
+  margin: 25px 5% 25px 0;
+  float: left;
+  box-sizing: border-box;
+}
+#search > form {
+  display: block;
+  position: relative;
+}
+#search-input {
+  width: 100%; height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+#search button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 12.5px;
+}
+#search-icon {
+  width: 50px;
+  height: 25px;
+  margin-top: 12.5px 0;
+  box-sizing: border-box;
+  z-index: 99; 
+  top: 0; right: 0;
+  display: block;
+}
+#icons {
+  width: 55%; 
+  height: 50px;
+  float: left;
+  margin: 25px 0;
+  box-sizing: border-box;
+}
+#icons > li {
+  width: 25%;
+  height: 50px;
+  float: left;
+}
+#icons > li:hover > a > svg path,
+#icons > li:hover > a > svg circle,
+#icons > li:hover > a > svg line,
+#icons > li:hover > a > svg rect {
+  stroke: #d43540;
+}
+#icons > li > a {
+  display: block;
+  padding: 12.5px 0;
+}
+#icons > li > a > svg {
+  display: block;
+  width: 50px; height: 25px;
+}
+
+
+
+/* banner */
+#banner-wrap {
+  overflow: hidden;
+}
+#banner-wrap > img {
+  width: 100%;
+  display: block;
+}
+#banner-wrap > img:first-child {
+  animation: big 2s forwards;
+  overflow: hidden;
+}
+@keyframes big {
+  from {transform: scale(2);}
+  to {transform: scale(1);}
+}
+#banner-wrap > img:last-child {
+  z-index: -1;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+
+
+
+/*content */
+.wrap-1200 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10% 0;
+
+}
+#season-background {
+  height: 600px;
+  background: url('../images/main/season.jpg') center no-repeat;
+  background-size: 100%;
+}
+#season-yoga {
+  margin-top: 10%;
+}
+#season-yoga > img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0;
+}
+#season-yoga > img.visible {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+#seasonTxt {
+  width: 50%;
+  margin: 10% auto;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* content 공통 */
+.txtTitle {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2;
+}
+.txtComment {
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.detailbutton {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  padding: 15px 20px;
+  margin-top: 3%;
+  border: 1px solid #2c282e;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.detailbutton:hover {
+  background-color: #2c282e;
+  color: white;
+  transition: all 0.5s;
+}
+
+
+
+
+/* menItem */
+#menItem::after {
+  content: ""; display: block; clear: both;
+}
+#menItemTxt {
+  width: 50%;
+  float: left;
+  margin: 14% 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#menItemImage {
+  width: 50%;
+  margin: 2% 0;
+  float: left;
+  box-sizing: border-box;
+  animation: around;
+  animation-duration: 10s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes around {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+#menItemImage > img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* accessory */
+#accessoryMen {
+  transform-origin: bottom left;
+  margin-left: 23%;
+}
+@keyframes scaleAnimation {
+  from { transform: scale(1); }
+  to { transform: scale(0.3);}
+  /* 25% { transform: scale(0.9); }
+  37.5% { transform: scale(0.8); }
+  50% { transform: scale(0.7); }
+  62.5% { transform: scale(0.6); }
+  75% { transform: scale(0.5); }
+  87.5% { transform: scale(0.4); }
+  100% { transform: scale(0.3); } */
+}
+#accessoryMen > img {
+  width: 90%;
+}
+#accessoryMatte {
+  margin-top: 5%;
+}
+#accessoryMatte::after {
+  content: ""; display: block; clear: both;
+}
+#matteImage {
+  width: 40%;
+  float: left;
+  box-sizing: border-box;
+
+}
+#matteImage > img {
+  width: 25%;
+  padding-left: 60%;
+}
+#accessoryTxt {
+  width: 60%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 19.5% 0;
+}
+
+/* tennisItem */
+#tennisWoman::after {
+  content: ""; display: block; clear: both;
+}
+#tennisTxt {
+  width: 60%;
+  margin: 17.7% 0;
+  text-align: center;
+  float: left;
+}
+#txt-wrap {
+  margin-bottom: 3%;
+}
+#womanImage {
+  float: left;
+  width: 40%;
+  overflow: hidden;
+}
+#womanImage > ul {
+  width: 200%;
+}
+#womanImage > ul::after {
+  content: ""; display: block; clear: both;
+}
+#womanImage > ul > li {
+  width: 50%;
+  float: left;
+}
+#womanImage > ul > li > img {
+  display: block;
+  width: 100%;
+}
+
+/* community */
+#community-wrap > ul {
+  padding: 0 3%;
+}
+#community-wrap > ul::after {
+  content: ""; display: block; clear: both;
+}
+
+#community-wrap > ul > li{
+  margin: 0 18px;
+  position: relative;
+  width: 30%;
+  float: left;
+}
+#community-wrap > ul > li > h1 {
+  font-size: 50px;
+  line-height: 1.5; 
+  text-align: center;
+  font-family: 'poppins', 'noto sans kr' , serif;
+  font-weight: 500;
+  position: relative;
+  transition: all .3s ease;
+  z-index: 99;
+}
+.image-wrap {
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: 150%;
+  margin-left: 45px;
+  position: relative;
+  z-index: 99;
+}
+.ambassador {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 21.14%, rgba(0, 0, 0, 0.4) 100%), 
+  url('../images/main/ambassador.jpg');
+}
+.life {
+  background-image: url('../images/main/life.jpg'); z-index: 99;
+}
+.social {
+  background-image: url('../images/main/social.jpg'); z-index: 99;
+}
+
+#community-wrap > ul > li > p {
+  margin-top: 20px;
+  padding: 0 13%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 99;
+  font-size: 0.9em;
+}
+.image-bg {
+  position: absolute; top: -40px; left: -30px;
+  width: 120%; height: 85%;
+  transition: all .3s ease;
+  background-color: #d43540;
+  opacity: 0;
+}
+#community-wrap > ul > li:hover > .image-bg {
+  transform: rotate(-15deg);
+  opacity: 1;
+}
+#community-wrap > ul > li:hover > h1 {
+  color: white;
+}
+
+
+
+/* subscribe */
+#subscribe {
+  padding: 7% 0 10% 0;
+}
+#subscribeTxt {
+  padding: 2% 0;
+  background-color: #f5f5f7;
+  text-align: center;
+  line-height: 2;
+
+}
+#subscribeTxt > h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+#subscribeTxt > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1%;
+}
+#form-wrap {
+  width: 35%;
+  margin: 0 auto;
+}
+#agreeform {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.checkbox:not(:first-child) {
+  margin-left: 2%;
+}
+#email-wrap {
+  box-sizing: border-box;
+  padding: 20px;
+}
+#email {
+  width: 55%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 3% 4%;
+  border: 1px solid rgba(0,0,0,0.5);
+  margin-right: 3%;
+}
+#subbutton {
+  width: 30%;
+  background-color: #2c282e;
+  border-radius: 5px; border-style: none; 
+  border-width: 0px; color: rgb(255, 255, 255); 
+  font-size: 16px; font-weight: 600; line-height: 1.2; white-space: normal; 
+  padding: 3%; text-align: center; word-break: break-word; cursor: pointer; 
+}
+#subbutton:hover {
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+/* footer */
+#ft-wrap {
+  width: 1200px;
+  padding: 3%;
+  margin: 0 auto;
+}
+#ftmenu::after {
+  content: ""; display: block; clear: both;
+}
+.ftTxt {
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+}
+.ftTxt > h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 3;
+}
+.ftTxt > ul > li {
+  font-size: 12px;
+  line-height: 2;
+}
+.sns::after {
+  content: ""; display: block; clear: both;
+}
+.sns {
+  margin-left: -2%;
+}
+.sns > li {
+  width: 15%;
+  float: left;
+  text-align: center;
+  margin-right: 3%;
+} 
+#kakaotalk {
+  width: 70%;
+}
+#facebook {
+  width: 40%;
+}
+#instargram {
+  width: 60%;
+}
+
+#copyright {
+  margin-top: 5%;
+  border-top: 1px solid rgba(44, 40, 46, 0.3);
+  padding-top: 2%;
+}
+#copyright > span {
+  width: 40%;
+  font-size: 14px;
+  opacity: 0.5;
+}
+#copyright::after {
+  content: ""; display: block; clear: both;
+}
+#ftlegal {
+  width: 25%;
+  float: right;
+}
+#ftlegal > li {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+#ftlegal > li:not(:last-child) {
+  margin-right: 12%;
+}

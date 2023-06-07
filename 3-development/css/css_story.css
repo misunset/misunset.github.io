@@ -1,0 +1,330 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  font-family: EB Garamond, "IBM Plex Sans KR", sans-serif;
+  background-color: #192b4f;
+  box-sizing: border-box;
+  width: 100%; height: 100%;
+}
+header {
+  width: 100%; height: 100px; position: fixed; z-index: 9;
+}
+#header-wrap {
+  width: 1200px; margin: 0 auto;
+}
+#logo {
+  width: 400px; float: left; 
+}
+#logo > a {
+  display: block; text-align: center;
+}
+#logo > a > img {
+  margin: 25px auto; width: 60%;
+}
+#nav {
+  padding: 25px;
+  width: 600px; float: right; 
+}
+#nav > li {
+  width: 25%; height: 50px; line-height: 50px;
+  float: left;
+  color: white;
+  font-weight: 600; font-size: 25px;
+}
+#nav > li > a {
+  display: block; text-align: center; 
+  position: relative;
+}
+/* #nav > li > a:hover {
+  opacity: 0.7;
+  transition-duration: 400ms;
+} */
+#nav > li > a::after { 
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 50%; transform: translateX(-50%);
+  width: 0; height: 3px;
+  background-color: white;
+  transition-duration: 300ms;
+}
+#nav > li > a:hover::after {
+  width: 50%;
+}
+.dark {
+  color: #192b4f;
+}
+/* 가상 요소 색상 바꾸기 */
+#nav > li > a.dark::after {
+  background-color: #192b4f;
+}
+
+
+
+
+/* 1 banner start! */
+#banner {
+  width: 100%; height: 100%;
+  background-image: url('../images/story_banneredit.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#content-wrap1 {
+  position: absolute;
+  width: 1000px;
+  top: 55%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+#content-wrap1 > h1 {
+  float: right;
+  font-size: 170px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+/* 마우스 휠 */
+#scrolldown {
+  width: 40px; height: 50px;
+  margin: 0 auto; 
+  margin-top: 350px;
+}
+
+.scroll {
+  width: 30px;
+  height: 50px;
+  border: 3px solid white; border-radius: 30px;
+  margin: 0 auto;
+  animation: upDown 1s infinite;
+}
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.wheel {
+  width: 4px; height: 9px;
+  margin: 8px auto;
+  border-radius: 20%;
+  background: white;
+  display: block;
+}
+
+
+/*
+.img_ani {
+	transition: transform 1s ease, opacity 1s ease;
+	opacity:0;
+}
+*/
+
+
+
+
+/* 지정한 content 안보이게 */
+.con {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.hidden { 
+  visibility: hidden;
+}
+
+
+
+/* #introduce */
+#introduce {
+  padding: 200px;
+}
+#content-wrap2 {
+  width: 1200px; 
+  margin: 0 auto;
+}
+#content-wrap2::after { content: ""; display: block; clear: both;}
+#introduce-text { /* 텍스트 감싸는 박스 */
+  margin-top: -55px; 
+  float: left;
+  width: 47%;
+  color: white;
+}
+.text > h3 { /* 큰 타이틀 */
+  font-size: 45px;
+  font-weight: 600;
+}
+.text > p { /* 작은 글씨 */
+  line-height: 1.5;
+  padding-top: 23px;
+  font-size: 23px;
+}
+.text { /* 각 li */
+  margin-top: 120px;
+}
+#lightimage {
+  margin-left: 35px;
+  float: right; width: 50%; 
+  background-image: url('../images/story-lightoff.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  text-align: center;
+
+}
+#street-on {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 1500ms;
+}
+#street-on > img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* #profile-1 */
+#profile {
+  height: 100%; background-color: #fff4c4;
+  padding: 200px 0;
+}
+#content-wrap3 {
+  width: 1200px; height: 100%;
+  margin: 0 auto;
+}
+#content-wrap3 > ul {
+  height: 100%;
+}
+
+.profile-who {
+  width: 33.33%; display: inline-table;
+  box-sizing: border-box; 
+  text-align: center; margin-right: -3px;
+}
+.imoji {
+  width: 70%;
+  margin-top: 100px;
+}
+.profile-who > img {
+  /* lamp, imoji */
+  width: 50%; 
+}
+.profile-who > h3 {
+ /* middle title */
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: -90px;
+  
+}
+.profile-who > div { 
+  /* txt */
+  line-height: 1.5;
+  padding-top: 60px;
+  font-size: 23px;
+  font-weight: 500;
+}
+#growup-text { /* 1st txt */
+  margin-top: 5px;
+}
+#warmth-text { /* 3rd txt */
+  margin-top: 15px;
+}
+
+
+
+
+/* #profile-2 */
+#content-wrap4 {
+  width: 1000px; height: 100%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+#content-wrap4::after { content: ""; display: block; clear: both;}
+#profile-me {
+  width: 30%; height: 100%;
+  background-color: #cacffe; float: left;
+}
+#profile-me > img {
+  width: 70%; display: block; margin: 50px auto;
+}
+.profile-text {
+  width: 65%;
+  float: right; 
+  padding-left: 4%; box-sizing: border-box;
+}
+.profile-text > li:nth-child(1), .profile-text > li:nth-child(2) {
+  margin-bottom: 50px;
+}
+.profile-text > li > h4 {
+  font-size: 28px; font-weight: 500;
+}
+.me-text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.me-text > li {
+  line-height: 1.5;
+}
+.me-text > li > span {
+  margin-left: 10px;
+}
+
+
+
+
+/* #skills */
+#skills {
+  height: 100%;
+}
+#content-wrap5 {
+  width: 1200px;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+#content-wrap5 > h3 {
+  font-size: 45px; font-weight: 600;
+  color: white;
+  text-align: center;
+}
+#skills-wrap { /* skill 전체 감싸는 박스 */
+  padding: 150px 50px 0;
+}
+.skill { /*li*/
+  width: 45%; display: inline-block;
+  margin-bottom: 100px;
+}
+.ai {
+  float: right;
+}
+.css {
+  float: right;
+}
+.skill > img { /* ps, ai, html, css, jquery */
+  width: 15%; 
+  margin-left: 5px;
+}
+.ps > img, .ai > img { /* 사이즈 좀 더 줄이기 */
+  width: 15%;
+}
+.skills-lamp { /*lamp 10ea*/
+  width: 80%; float: right; 
+  text-align: center; 
+  margin-top: 20px;
+  box-sizing: border-box; 
+}
+.skills-lamp > span > img {
+  width: 9%;
+  opacity: 0.3;
+}
+
+

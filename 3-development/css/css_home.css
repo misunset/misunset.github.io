@@ -1,0 +1,158 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body, html {
+  font-family: EB Garamond, "IBM Plex Sans KR", sans-serif;
+  background-color: #192b4f;
+  width: 100%; height: 100%;
+}
+
+#header {
+  position: relative; z-index: 99;
+  width: 100%; height: 100px; 
+}
+#header-wrap {
+  width: 1200px; margin: 0 auto;
+}
+#header-wrap::after { content: ""; display: block; clear: both;}
+
+#logo {
+  width: 400px; float: left; 
+}
+#logo > a {
+  display: block; text-align: center;
+}
+#logo > a > img {
+  margin: 30px auto; width: 60%;
+}
+#nav {
+  padding: 25px;
+  width: 600px; float: right; 
+}
+#nav > li {
+  width: 25%; height: 50px; line-height: 50px;
+  float: left;
+  color: white;
+  font-weight: 600; font-size: 25px;
+}
+#nav > li > a {
+  display: block; text-align: center; 
+  position: relative;
+}
+#nav > li > a:hover {
+  opacity: 0.7;
+  transition-duration: 400ms;
+}
+#nav > li > a::after { 
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 50%; transform: translateX(-50%);
+  width: 0; height: 3px;
+  background-color: white;
+  transition-duration: 300ms;
+}
+#nav > li > a:hover::after {
+  width: 50%;
+}
+
+
+
+/*  main start!  */
+#main {
+  width: 100%; height: 90%;
+}
+#desk-wrap {
+  width: 1200px; height: 100%;
+  margin: 0 auto; 
+  position: relative;
+}
+.desk {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+.desk > img { 
+  /* desk image */
+  width: 80%; 
+}
+
+.on {
+  display: none; 
+}
+#blind-wrap {
+  position: absolute; top: 0;
+  width: 30%; margin-top: 13px;
+  padding: 0 17px;
+  box-sizing: border-box;
+  margin-left: 80px;
+}
+#blind-wrap > span > img {
+  width: 80%;
+  margin-bottom: 5.5px;
+}
+#lamp-light {
+  position: absolute; top: 23%;
+  width: 30%; margin-left: 41.5%;
+}
+#lamp-light > img {
+  width: 80%; 
+}
+.hello {
+  position: absolute;
+  top: 60%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: 600;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: cursor 1s steps(10, end) infinite;
+}
+
+@keyframes cursor{ 
+  0%, 100% {border-right: 2px solid #242424} 
+  50%{border-right: 2px solid transparent} 
+}
+
+
+/* mouse wheel */
+#scrolldown {
+  width: 40px; height: 50px;
+  position: absolute;
+  left: 50%; top: 50%;
+  display: inline-block;
+  z-index: 99;
+}
+.scroll {
+  margin: 0 auto;
+  width: 30px;
+  height: 50px;
+  border: 3px solid white; border-radius: 30px;
+  animation: upDown 1s infinite;
+}
+.wheel {
+  width: 4px; height: 9px;
+  margin: 8px auto;
+  border-radius: 20%;
+  background: white;
+  display: block;
+}
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+} 
+

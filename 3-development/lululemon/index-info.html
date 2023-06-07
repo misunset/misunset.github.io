@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>룰루레몬 상세페이지</title>
+  <!--구글폰트-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" 
+  rel="stylesheet">
+  <!--스타일시트-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="icon" type="image/png" href="images/main/lululemonlogo.png">
+  <!--자바스크립트-->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="js/info.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div id="header-wrap">
+      <!--menu-->
+      <div id="menu">
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/lululemonlogo.svg" alt="lululemonlogo">
+          </a>
+        </div> <!--#logo-->
+        <ul id="nav">
+          <li><a href="#">여성</a></li>
+          <li><a href="#">남성</a></li>
+          <li><a href="#">액세서리</a></li>
+          <li><a href="#">커뮤니티</a></li>
+        </ul><!--#nav-->
+      </div><!--#menu-->
+
+      <!--pictogram-->
+      <div id="pictogram">
+
+        <div id="search">
+          <form>
+            <input type="search" id="search-input" placeholder="검색">
+            <button>
+              <svg id="search-icon" data-name="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.23 86.2">
+                <title>search</title><circle cx="37.75" cy="37.75" r="35.75" style="fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:4px"/><line x1="65.65" y1="60.84" x2="96.23" y2="84.2" style="fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/>
+              </svg>
+            </button>
+          </form>
+        </div><!--#search-->
+
+        <ul id="icons">
+          <li>
+            <a href="#">
+              <svg id="login" data-name="login" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.7 96.7"><defs><style>.cls-1{fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><title>룰루레몬 픽토그램</title><circle class="cls-1" cx="48.35" cy="39.9" r="12.68"/><path class="cls-1" d="M50,96.35c-25.48,0-33.78-15.67-34-14.94a46.31,46.31,0,0,0,68.75-.68C84.45,80.21,73.67,96.35,50,96.35Z" transform="translate(-1.65 -1.65)"/><path class="cls-1" d="M50,3.65A46.34,46.34,0,0,0,15.93,81.41c.24-.73,8.54-25.49,34-25.49,23.72,0,34.5,24.29,34.73,24.81A46.33,46.33,0,0,0,50,3.65Z" transform="translate(-1.65 -1.65)"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg id="wish" data-name="wish" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.61 83.08"><defs><style>.cls-1{fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>whish</title><path class="cls-1" d="M56.36,30.61S42.61,6.87,23.86,10.93C4.93,15-3.56,35.05,9.44,55.31S49.81,89.54,49.81,89.54" transform="translate(-1.19 -8.46)"/><path class="cls-1" d="M54.37,26.13s6.86-14.94,24.72-13.55C93.74,13.72,104,34.93,90.57,54.94,75.7,77.15,50.12,89.54,50.12,89.54" transform="translate(-1.19 -8.46)"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg id="bag" data-name="bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.46 85.2"><defs><style>.cls-1{fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><title>bag</title><rect class="cls-1" x="2" y="17.85" width="64.46" height="65.35" rx="3.03"/><path class="cls-1" d="M63.6,32.49C63.6,19.74,57.51,9.4,50,9.4S36.4,19.74,36.4,32.49" transform="translate(-15.77 -7.4)"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg id="language" data-name="language" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.37 96.37"><defs><style>.cls-1{fill:none;stroke:#1d1d1b;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>language</title><circle class="cls-1" cx="48.18" cy="48.18" r="46.18"/><path class="cls-1" d="M12,24.76a103.11,103.11,0,0,0,38.23,8A89.93,89.93,0,0,0,88,24" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M26.43,12.27s-11,16.86-11,37.56c0,21,11.81,38.35,11.81,38.35" transform="translate(-1.82 -1.82)"/>
+                <path class="cls-1" d="M74.29,12.15s11,16.86,11,37.56c0,21-11.81,38.36-11.81,38.36" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M42.57,7S32,26.89,32,50.41c0,23.83,11.68,42.83,11.68,42.83" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M57.43,7S68.05,26.89,68.05,50.41c0,23.83-11.68,42.83-11.68,42.83" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M4.61,47.28s24.16,6.39,46.45,6.39a134.34,134.34,0,0,0,44.33-7.34" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M13,77a116.57,116.57,0,0,1,37.6-6.53,118.54,118.54,0,0,1,37.08,5.74" transform="translate(-1.82 -1.82)"/><path class="cls-1" d="M29,9.58S39.74,14.7,49.76,14.7C59,14.7,71,9.22,71,9.22" transform="translate(-1.82 -1.82)"/><line class="cls-1" x1="48.18" y1="2" x2="48.18" y2="94.37"/>
+              </svg>
+            </a>
+          </li>
+        </ul><!--#icons-->
+      </div><!--#pictogram-->
+
+    </div><!--#header-wrap-->
+  </header>
+
+  <main>
+    <!--content-->
+    <section id="product">
+      <div class="wrap-1200">
+        <div id="pdImg">
+          <div class="pdbottom1">
+            <img src="images/info/infor1.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+          <div class="pdbottom1">
+            <img src="images/info/infor2.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+          <div class="pdbottom1">
+            <img src="images/info/infor3.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+          <div class="pdbottom1">
+            <img src="images/info/infor4.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+          <div class="pdbottom1">
+            <img src="images/info/infor5.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+          <div class="pdbottom1">
+            <img src="images/info/infor6.jpg" alt="leggings" class="infor-img">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-img">
+            </div><!--.modal-->
+          </div>
+        </div><!--#pdImg-->
+
+        <div id="pdTxt">
+
+          <div class="txt title">
+            <h1>룰루레몬 Align™ 하이라이즈 팬츠 25” 샤인</h1>
+            <span>SKU: prod10850238</span>
+            <p>159,000원</p>
+          </div><!--.txt title-->
+
+          <div class="txt selection">
+            <div id="colortxt">
+              <p>색상</p>
+              <span>Diamond Dye Misty Shell Cacao Diffuse Dot Foil</span>
+            </div>
+            <div id="colorbuttons">
+              <button></button>
+            </div>
+            <div id="sizetxt">
+              <p>US 사이즈</p>
+              <!--<div>사이즈 가이드</div>-->
+            </div>
+            <div id="sizebuttons">
+              <ul>
+                <li><button><span>0</span></button></li>
+                <li><button><span>2</span></button></li>
+                <li><button><span>4</span></button></li>
+                <li><button><span>6</span></button></li>
+                <li><button><span>8</span></button></li>
+                <li><button><span>10</span></button></li>
+                <li><button><span>12</span></button></li>
+                <li><button><span>14</span></button></li>
+                <li><button><span>16</span></button></li>
+              </ul>
+            </div><!--#sixebuttons-->
+            <div id="addbuttons">
+              <button class="addbutton">
+                <img src="images/info/bag.png" alt="addbag">
+                <span>장바구니에 추가</span>
+              </button>
+              <button class="addbutton">
+                <img src="images/info/wish.png" alt="wishlist">
+                <span>위시리스트에 추가</span>
+              </button>
+            </div><!--#addbuttons-->
+          </div><!--.txt selection-->
+
+          <div class="txt info">
+            <div id="wemade">
+              <p>Why we<br>
+                made this</p>
+              <span>
+                버터처럼 부드러운 초경량 Nulu™ 원단의 Align™ 컬렉션과 함께 수련에만 집중해보세요.
+              </span>
+            </div>
+
+            <div id="pdToggle">
+
+              <div class="toggle-bottom">
+                <span class="infoicon">
+                  <svg id="yogaicon" data-name="yogaicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.87 86.42">
+                    <title>flexible</title><circle cx="53.23" cy="14.08" r="12.08" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><path d="M94.94,34.09s-14.36.3-22.52.39c-2,0-4.56,2.05-5.86,4.81-1.85,3.92-5.62,14.36-5.62,14.36A1.42,1.42,0,0,0,62,55.44c4,.8,20.33,3.39,22,8.63,1.72,5.51.52,21.23.12,25.85a1.42,1.42,0,0,1-1.41,1.29h-9a1.42,1.42,0,0,1-1.42-1.42v-8.7c0-10.53-.81-14.18-8.5-14.18S45.51,66.1,37,71.37c-7.37,4.56-17.28,16.72-19,19.24a1.42,1.42,0,0,1-1.16.6H6.72a1.6,1.6,0,0,1-1.62-2C5.9,84.87,12.5,77,17.07,73,24,66.91,43.69,59.21,44.9,49.09a42.48,42.48,0,0,0-.69-9.32c-.83-3.9-5.32-5.26-9.31-5.26H8.57" transform="translate(-3.06 -6.79)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px"/>
+                  </svg>
+                </span>
+                <span class="info-title">활용도: 요가</span>
+              </div><!--#.toggle-bottom-->
+              
+
+              <div class="toggle-bottom">
+                <span class="infoicon">
+                  <svg id="detailicon" data-name="detailicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.49 83.96">
+                    <title>detail</title><path d="M37.25,46.28H24.68a8.18,8.18,0,0,0-8.18,8.18v24.1a8.18,8.18,0,0,0,8.18,8.18h24.1A8.19,8.19,0,0,0,57,78.56v-17A26.78,26.78,0,0,1,37.25,46.28Z" transform="translate(-11.25 -8.02)" style="fill:none"/><path d="M48.78,46.28H40.85A23.55,23.55,0,0,0,57,58.23V54.46A8.18,8.18,0,0,0,48.78,46.28Z" transform="translate(-11.25 -8.02)" style="fill:none"/><path d="M48.41,46.38a8.44,8.44,0,0,1,8.44,8.45v3.89a24.59,24.59,0,0,0,3.34.43V54.83A11.78,11.78,0,0,0,48.41,43H38.76a24.33,24.33,0,0,0,1.47,3.34Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/><path d="M56.85,79.7a8.44,8.44,0,0,1-8.44,8.44H23.54a8.45,8.45,0,0,1-8.45-8.44V54.83a8.45,8.45,0,0,1,8.45-8.45H29a2.52,2.52,0,0,0,2.39-3.3v0h-7.8A11.79,11.79,0,0,0,11.75,54.83V79.7A11.78,11.78,0,0,0,23.54,91.48H48.41A11.77,11.77,0,0,0,60.19,79.7V62.49a26.46,26.46,0,0,1-3.34-.38Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/><path d="M40.85,46.28h-3.6A26.78,26.78,0,0,0,57,61.52V58.23A23.55,23.55,0,0,1,40.85,46.28Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/><path d="M56.85,58.72v3.39a26.46,26.46,0,0,0,3.34.38V59.15A24.59,24.59,0,0,1,56.85,58.72Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/><path d="M40.85,46.28A24.69,24.69,0,0,1,39.42,43H36a26.39,26.39,0,0,0,1.24,3.24Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/><path d="M64.51,58.49v0A23.45,23.45,0,1,0,39.42,43h9.36A11.41,11.41,0,0,1,60.19,54.46v4.18c.45,0,.9,0,1.35,0A22.33,22.33,0,0,0,64.51,58.49Z" transform="translate(-11.25 -8.02)" style="fill:none"/><path d="M88.25,35.22A26.71,26.71,0,1,0,36,43h3.41a23.47,23.47,0,1,1,27,15.14,2.33,2.33,0,0,0-1.88,2.27v1.3A26.74,26.74,0,0,0,88.25,35.22Z" transform="translate(-11.25 -8.02)" style="stroke:#000;stroke-miterlimit:10"/>
+                  </svg>
+                </span>
+                <span class="info-title">제품 디테일</span>
+              </div><!--.toggle-bottom-->
+              <div class="accordion-info">
+                <ul>
+                  <li>• 카드나 열쇠는 웨이스트밴드 속 히든 포켓에 보관해 주세요.</li>
+                  <li>• 요가 같은 저강도 운동을 할 때 혹은 최상의 편안함을 느끼고 싶을 때에는 Align™ 컬렉션과 함께해 보세요.</li>
+                  <li>• 발목 위로 올라오는 길이</li>
+                </ul>
+              </div><!--.accordion-info-->
+              
+
+              <div class="toggle-bottom">
+                <span class="infoicon">
+                  <svg id="textureicon" data-name="textureicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.07 89.88">
+                    <title>texture</title><path d="M6.39,25.23,60.76,8.48s10.55,2,13.71,15.41S71.63,49.83,77,61.67A29.05,29.05,0,0,0,93.46,76.86L37,94.36s-14.39-6.28-14.87-23c-.51-17.91,6.57-28.42-5.88-38.91A103.81,103.81,0,0,0,6.39,25.23Z" transform="translate(-4.39 -6.48)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/><circle cx="23.66" cy="25.53" r="2.92"/><circle cx="30.14" cy="41.26" r="2.92"/><circle cx="32.81" cy="58.14" r="2.92"/><circle cx="36.23" cy="74.02" r="2.92"/><circle cx="40.26" cy="20.2" r="2.92"/><circle cx="44.7" cy="35.76" r="2.92"/><circle cx="47.71" cy="52.48" r="2.92"/><circle cx="51.67" cy="68.2" r="2.92"/><circle cx="55.87" cy="14.89" r="2.92"/><circle cx="59.25" cy="30.94" r="2.92"/><circle cx="61.93" cy="47.16" r="2.92"/><circle cx="66.29" cy="63.38" r="2.92"/>
+                  </svg>
+                </span>
+                <span class="info-title">버터처럼 부드러운 초경량 Nulu™ 원단</span>
+              </div><!--.toggle-bottom-->
+              <div class="accordion-info">
+                <ul>
+                  <li>• 버터처럼 부드럽고 정말 가벼워요.</li>
+                  <li>• 4방 스트레치</li>
+                  <li>• 땀 배출력</li>
+                  <li>• 통기성</li>
+                  <li>• Lycra™ 엘라스테인 원사가 더해져 탁월한 신축성과 복원력</li>
+                  <li>• 시간의 흐름과 함께 은은해지는 디테일의 매력을 느껴 보세요.</li>
+                </ul>
+              </div><!--.accordion-info-->
+
+              <div class="toggle-bottom">
+                <span class="infoicon">
+                  <svg id="textureicon" data-name="textureicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.07 89.88">
+                    <title>texture</title><path d="M6.39,25.23,60.76,8.48s10.55,2,13.71,15.41S71.63,49.83,77,61.67A29.05,29.05,0,0,0,93.46,76.86L37,94.36s-14.39-6.28-14.87-23c-.51-17.91,6.57-28.42-5.88-38.91A103.81,103.81,0,0,0,6.39,25.23Z" transform="translate(-4.39 -6.48)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/><circle cx="23.66" cy="25.53" r="2.92"/><circle cx="30.14" cy="41.26" r="2.92"/><circle cx="32.81" cy="58.14" r="2.92"/><circle cx="36.23" cy="74.02" r="2.92"/><circle cx="40.26" cy="20.2" r="2.92"/><circle cx="44.7" cy="35.76" r="2.92"/><circle cx="47.71" cy="52.48" r="2.92"/><circle cx="51.67" cy="68.2" r="2.92"/><circle cx="55.87" cy="14.89" r="2.92"/><circle cx="59.25" cy="30.94" r="2.92"/><circle cx="61.93" cy="47.16" r="2.92"/><circle cx="66.29" cy="63.38" r="2.92"/>
+                  </svg>
+                </span>
+                <span class="info-title">소재, 세탁방법 & 주의사항 및 제조국</span>
+              </div>
+              <div class="accordion-info">
+                <h6>소재</h6>
+                <ul>
+                  <li>• 바디: 80% 나일론, 20% 폴리우레탄</li>
+                </ul>
+                <h6>세탁방법 및 주의사항</h6>
+                <ul>
+                  <li>• 세탁기에 넣어 찬물로 세탁</li>
+                </ul>
+                <p><img src="images/info/whitenericon.svg" alt="infoicon">표백제 사용 금지</p>
+                <ul>
+                  <li>• 걸어서 건조</li>
+                </ul>
+                <p><img src="images/info/ironicon.svg" alt="infoicon">다림질 금지</p>
+                <p><img src="images/info/dryicon.svg" alt="infoicon">드라이 클리닝 금지</p>
+                <ul>
+                  <li>• 유사 색상끼리 세탁</li>
+                </ul>
+                <h6>제조국</h6>
+                <ul>
+                  <li>• 제조국: 캄보디아</li>
+                  <li>• 제조연월: 2021-08-01</li>
+                  <li>• 제조자: 룰루레몬</li>
+                  <li>• 수입자: 룰루레몬애틀라티카코리아 유한회사</li>
+                  <li>• 품질보증기준: 관련 법 및 소비자분쟁해결 규정에 따름</li>
+                  <li>• 품질문의: 070.4769.7965</li>
+                  <li><a href="#">• 판매 약관</a></li>
+                </ul>
+              </div><!--.accordion-info-->
+
+              <div class="toggle-bottom">
+                <span class="infoicon">
+                  <svg id="deliveryicon" data-name="deliveryicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.01 68.32"><title>delivery</title><path d="M21.34,67.37l-13.23.14a2,2,0,0,1-2.22-2.2V19.8A1.77,1.77,0,0,1,7.67,18h57A1.76,1.76,0,0,1,66.4,19.8V67a.56.56,0,0,1-.56.56H33.45" transform="translate(-3.89 -16.04)" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><circle cx="23.59" cy="54.81" r="7.18" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><circle cx="74.15" cy="54.81" r="7.18" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><path d="M66.41,63.28l.08-32H83.16A2.56,2.56,0,0,1,85,32l8.55,11.35a1.7,1.7,0,0,1,.38,1.11l-.22,19.59c0,1.36-.1,1.79-1.47,1.79H83.45" transform="translate(-3.89 -16.04)" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><line x1="4.19" y1="65.82" x2="87.3" y2="65.82" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:5px"/>
+                  </svg>
+                </span>
+                <span class="info-title">배송 및 반품정책</span>
+              </div><!--.toggle-bottom-->
+              <div class="accordion-info">
+                <p><span>[홍콩 해외 배송 안내]</span><br>영업일 기준 주문일로부터 약 3~5일 내 배송</p>
+                <h6>온라인 스토어 반품 정책</h6>
+                <p>수령일로부터 30일 이내에 반품 신청 가능<br>반품 신청 전에 제품 택이 부착되어 있는지, 착용 및 세탁하지 않은 상태인지 다시 한 번 체크해주세요.</p>
+                <h6>반품 방법</h6>
+                <ol>
+                  <li>1. 제품을 받은 날로부터 30일 이내에 게스트 에듀케이션 센터(GEC)에 이메일(gec.kr@lululemon.com) 또는 전화(070.4769.7965)로 반품 의사를 남겨주세요.<br>
+                    주문번호(ex. KR00123456)/성함/반품할 제품 목록을 함께 알려주시면 빠른 처리가 가능해요.</li>
+                  <li>2. 반품이 접수되면 제품을 포장하신 후 CJ대한통운 기사님께 전달해주세요.</li>
+                  <li>3. 제품이 회수되면 검수 절차를 거쳐 환불이 진행됩니다. 환불 시에는 환불 완료 확인 이메일을 발송해드리며, 환불 처리에 영업일 7일-10일가량 소요될 수 있음을 참고해주세요.(거래은행 혹은 카드사마다 취소 기간 상이)</li>
+                </ul>
+              </div><!--.accordion-info-->
+
+            </div><!--pdToggle-->
+
+          </div><!--.txt Info-->
+      
+        </div><!--#pdTxt-->
+      </div>
+    </section>
+    <section id="recommend">
+      <div class="wrap-1200">
+        <h2>추천 제품</h2>
+        <div id="wrap-recommend">
+          <div class="recommendbutton previous">
+            <button>
+              <svg class="arrow" data-name="previousbutton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.82 87.53"><polygon points="43.82 3.49 39.99 0 1.63 42.02 0 43.77 1.63 45.51 39.99 87.53 43.82 84.04 7.04 43.77 43.82 3.49" style="fill:#1d1d1b"/>
+              </svg>
+            </button>
+          </div>
+          <div id="recommend-images">
+            <div id="rcmd-slide">
+              <!--1st slide-->
+              <div id="rcmd1">
+                <ul class="img50">
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend1.jpg" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend2.jpg" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend3.jpg" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend4.jpg" alt="recommendbottom"></a>
+                  </li>
+                </ul>   
+                <ul class="img50">
+                  <li>
+                    <a href="#"><img src="images/info/recommend5.jpg" alt="recommendtop"></a>
+                  </li>
+                </ul>
+              </div><!--#rcmd1-->
+              <!--2nd slide-->
+              <div id="rcmd2">
+                <ul class="img50">
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend1-2.png" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend2-2.png" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend3-2.png" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend4-2.png" alt="recommendbottom"></a>
+                  </li>
+                </ul>
+                <ul class="img50">
+                  <li>
+                    <a href="#"><img src="images/info/recommend5-2.png" alt="recommendtop"></a>
+                  </li>
+                </ul>
+              </div><!--#rcmd2-->
+              <!-- 3rd slide -->
+              <div id="rcmd3">
+                <ul class="img50">
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend1-3.jpg" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend2-3.png" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend3-3.png" alt="recommendbottom"></a>
+                  </li>
+                  <li class="img25">
+                    <a href="#"><img src="images/info/recommend4-3.jpg" alt="recommendbottom"></a>
+                  </li>
+                </ul>
+                <ul class="img50">
+                  <li>
+                    <a href="#"><img src="images/info/recommend5-3.jpg" alt="recommendbottom"></a>
+                  </li>
+                </ul>
+              </div><!--#rcmd3-->
+            </div><!--#rcmd-slide-->
+          </div><!--#recommend-images-->
+          <div class="recommendbutton next">
+            <button>
+              <svg class="arrow" data-name="nextbutton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.82 87.53"><polygon points="0 84.04 3.82 87.53 42.19 45.51 43.82 43.77 42.19 42.02 3.82 0 0 3.49 36.77 43.77 0 84.04" style="fill:#1d1d1b"/>
+              </svg>
+            </button>
+          </div>
+        </div><!--#wrap-recommend-->
+
+        <div id="review">
+          <h2>상품평</h2>
+          <div id="reviewstars">
+            <ul>
+              <li class="starbox">
+                <svg data-name="review star" viewBox="0 0 98.99 94.14">
+                  <title>review</title>
+                  <polygon points="49.49 3.39 63.79 32.36 95.76 37.01 72.63 59.56 78.09 91.4 49.49 76.36 20.9 91.4 26.36 59.56 3.22 37.01 35.2 32.36 49.49 3.39" style="fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </li>
+              <li class="starbox">
+                <svg data-name="review star" viewBox="0 0 98.99 94.14">
+                  <title>review</title>
+                  <polygon points="49.49 3.39 63.79 32.36 95.76 37.01 72.63 59.56 78.09 91.4 49.49 76.36 20.9 91.4 26.36 59.56 3.22 37.01 35.2 32.36 49.49 3.39" style="fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </li>
+              <li class="starbox">
+                <svg data-name="review star" viewBox="0 0 98.99 94.14">
+                  <title>review</title>
+                  <polygon points="49.49 3.39 63.79 32.36 95.76 37.01 72.63 59.56 78.09 91.4 49.49 76.36 20.9 91.4 26.36 59.56 3.22 37.01 35.2 32.36 49.49 3.39" style="fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </li>
+              <li class="starbox">
+                <svg data-name="review star" viewBox="0 0 98.99 94.14">
+                  <title>review</title>
+                  <polygon points="49.49 3.39 63.79 32.36 95.76 37.01 72.63 59.56 78.09 91.4 49.49 76.36 20.9 91.4 26.36 59.56 3.22 37.01 35.2 32.36 49.49 3.39" style="fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </li>
+              <li class="starbox">
+                <svg data-name="review star" viewBox="0 0 98.99 94.14">
+                  <title>review</title>
+                  <polygon points="49.49 3.39 63.79 32.36 95.76 37.01 72.63 59.56 78.09 91.4 49.49 76.36 20.9 91.4 26.36 59.56 3.22 37.01 35.2 32.36 49.49 3.39" style="fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </li>
+            </ul>
+          </div><!--#reviewstars-->
+        </div>
+      </div>
+    </section>
+  
+    <section id="subscribe">
+      <div id="subscribeTxt">
+        <h2>10% 할인 기회</h2>
+        <p>lululemon 신제품, 스웻라이프 컨텐츠 및 이벤트 소식을 제일 먼저 받아보세요. 구독은 언제든지 취소할 수 있어요.</p>
+        <div id="form-wrap">
+          <form id="agreeform">
+            <div class="checkbox">
+              <label><input type="checkbox" id="allagree" name="subscribe" value="allagree"> 모두 동의</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="peragree" name="subscribe" value="14years"> 본인은 14세 이상입니다.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="peragree" name="subscribe" value="imagree"> 룰루레몬 뉴스레터 구독에 동의합니다.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="peragree" name="subscribe" value="marketing"> 뉴스레터 및 마케팅 정보 제공을 위한 개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+            <div id="email-wrap">
+              <input type="email" id="email" placeholder="이메일을 입력하세요.">
+              <button id="subbutton">구독하기</button>
+            </div><!--#email-wrap-->
+          </form><!--#agreeform-->
+        </div>
+      </div><!--#subscribeTxt-->
+    </section><!--#subscribe-->
+    
+  </main>
+
+  <footer id="footer">
+      <div id="ft-wrap">
+        <div id="ftmenu">
+          <div class="ftTxt">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+              <li><a href="#">내 계정</a></li>
+              <li><a href="#">위시리스트</a></li>
+              <li><a href="#">주문 조회</a></li>
+              <li><a href="#">주문 취소</a></li>
+            </ul>
+          </div>
+          <div class="ftTxt">
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">fAQ</a></li>
+              <li><a href="#">반품 & 환불</a></li>
+              <li><a href="#">주문 & 결제</a></li>
+              <li><a href="#">배송 정보</a></li>
+              <li><a href="#">사이즈 가이드</a></li>
+              <li><a href="#">기프트 카드</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">수선 안내</a></li>
+              <li><a href="#">친구 추천 캠페인 이용약관</a></li>
+            </ul>
+          </div>
+          <div class="ftTxt">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">브랜드 스토리</a></li>
+              <li><a href="#">사회공헌 프로그램</a></li>
+              <li><a href="#">팀세일 및 벌크세일</a></li>
+              <li><a href="#">커리어 기회</a></li>
+              <li><a href="#">스웻 컬렉티브</a></li>
+            </ul>
+          </div>
+          <div class="ftTxt">
+            <h3>CONTACT</h3>
+            <ul>
+              <li><a href="#">게스트 에듀케이션 센터(GEC)</a></li>
+              <li><a href="#">전화: 070.4769.7965<br>이메일: gec.kr@lululemon.com</a></li>
+              <li><a href="#">운영시간: 평일 9:00am~6:00pm<br>(점심시간 12:00~1:00pm)</a></li>
+            </ul>
+          </div>
+          <div class="ftTxt">
+            <h3>CONNECT WITH US</h3>
+            <ul class="sns">
+              <li><a href="#">
+                <svg id="kakaotalk" data-name="kakaotalk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93.25 85.66"><defs><clipPath id="clip-path" transform="translate(-3.38 -7.17)">
+                  <path d="M17.47,37.24h4.8s0,13.18,0,16.25c0,2.24,5,2.27,5,0l0-16.12,4.78,0c3,0,3-4.7,0-4.7-3.36,0-14.59-.09-14.59-.09-2.82,0-2.81,4.6,0,4.6" style="fill:#fff"/></clipPath>
+                  <clipPath id="clip-path-2" transform="translate(-3.38 -7.17)"><path d="M40.44,38.09l2.67,8.37H37.55Zm-3-3.92c-1.18,2.6-5.45,14.89-6.86,18.14-1,2.36,3.39,4.28,4.41,1.92l1-3.35H44.5a18.33,18.33,0,0,0,1.11,3.21c.94,2.49,5.5.77,4.56-1.73-1.35-3.56-6-16.37-6.87-18.19-.39-.84-1.79-1.44-3.16-1.44a2.78,2.78,0,0,0-2.69,1.44" style="fill:#fff"/></clipPath>
+                  <clipPath id="clip-path-3" transform="translate(-3.38 -7.17)"><path d="M51.85,34.94c0,4.18,0,17.63,0,17.63s-.38,2.67,1.91,2.67l9.63,0c2.26,0,2.25-4.8,0-4.8s-6.37,0-6.37,0,0-12.44,0-15.46a2.63,2.63,0,0,0-5.19,0" style="fill:#fff"/></clipPath>
+                  <clipPath id="clip-path-4" transform="translate(-3.38 -7.17)"><path d="M66.27,34.28c0,1.83-.06,18.38-.06,19.61,0,1.93,4.93,1.93,4.93,0V47.37l1.45-1.16,6.32,8.63c1.28,1.69,5.31-1.36,4-3L76.22,43s4.56-4.93,6.36-6.72c1-1-2.2-4.31-3.25-3.27l-8.16,8.16s.07-4.49,0-7c0-.95-1.18-1.4-2.37-1.4s-2.56.52-2.53,1.53" style="fill:#fff"/></clipPath></defs>
+                  <title>kakaotalk</title><path d="M50,7.17C24.25,7.17,3.38,23.67,3.38,44c0,13.25,8.84,24.86,22.12,31.36C24.52,79,22,88.57,21.45,90.62c-.63,2.53.93,2.5,1.95,1.82.81-.54,12.78-8.68,18-12.19a59.69,59.69,0,0,0,8.65.63c25.75,0,46.62-16.5,46.62-36.85S75.75,7.17,50,7.17" transform="translate(-3.38 -7.17)"/>
+                  <path d="M17.47,37.24h4.8s0,13.18,0,16.25c0,2.24,5,2.27,5,0l0-16.12,4.78,0c3,0,3-4.7,0-4.7-3.36,0-14.59-.09-14.59-.09-2.82,0-2.81,4.6,0,4.6" transform="translate(-3.38 -7.17)" style="fill:#fff"/><g style="clip-path:url(#clip-path)"><rect x="11.27" y="25.47" width="20.39" height="23.13" style="fill:#fff"/></g>
+                  <path d="M40.44,38.09l2.67,8.37H37.55Zm-3-3.92c-1.18,2.6-5.45,14.89-6.86,18.14-1,2.36,3.39,4.28,4.41,1.92l1-3.35H44.5a18.33,18.33,0,0,0,1.11,3.21c.94,2.49,5.5.77,4.56-1.73-1.35-3.56-6-16.37-6.87-18.19-.39-.84-1.79-1.44-3.16-1.44a2.78,2.78,0,0,0-2.69,1.44" transform="translate(-3.38 -7.17)" style="fill:#fff"/><g style="clip-path:url(#clip-path-2)"><rect x="26.19" y="25.57" width="21.55" height="23.85" style="fill:#fff"/></g>
+                  <path d="M51.85,34.94c0,4.18,0,17.63,0,17.63s-.38,2.67,1.91,2.67l9.63,0c2.26,0,2.25-4.8,0-4.8s-6.37,0-6.37,0,0-12.44,0-15.46a2.63,2.63,0,0,0-5.19,0" transform="translate(-3.38 -7.17)" style="fill:#fff"/><g style="clip-path:url(#clip-path-3)"><rect x="48.11" y="25.57" width="14.18" height="22.5" style="fill:#fff"/></g>
+                  <path d="M66.27,34.28c0,1.83-.06,18.38-.06,19.61,0,1.93,4.93,1.93,4.93,0V47.37l1.45-1.16,6.32,8.63c1.28,1.69,5.31-1.36,4-3L76.22,43s4.56-4.93,6.36-6.72c1-1-2.2-4.31-3.25-3.27l-8.16,8.16s.07-4.49,0-7c0-.95-1.18-1.4-2.37-1.4s-2.56.52-2.53,1.53" transform="translate(-3.38 -7.17)" style="fill:#fff"/><g style="clip-path:url(#clip-path-4)"><rect x="62.83" y="24.75" width="18" height="24.61" style="fill:#fff"/></g>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg id="facebook" data-name="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.24 94.79">
+                  <title>facebook</title>
+                  <path d="M50,50" transform="translate(-23.88 -2.61)"/>
+                  <path d="M63.17,2.69C45.44,3.38,40.41,13.77,40.41,31v4.55l-16.53.1V53.71H40.41V97.39h18.5V53.71H74.78l1.34-18.29H58.91v-4c0-4.14.42-9.17,6.3-10.15,1.55-.26,8.63-.39,10.91-.37V2.65C73.53,2.59,65.8,2.59,63.17,2.69Z" transform="translate(-23.88 -2.61)"/>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg id="instargram" data-name="instargram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.89 93.89">
+                  <title>instargram</title>
+                  <rect x="2" y="2" width="89.89" height="89.89" rx="20.84" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><circle cx="46.95" cy="46.95" r="25.96" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px"/><circle cx="75.77" cy="18.12" r="2.08" style="stroke:#000;stroke-miterlimit:10;stroke-width:3px"/>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="copyright">
+          <span>© lululemon athletica Korea ltd. All rights reserved</span>
+          <ul id="ftlegal">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+      </div><!--#ft-wrap-->
+    </footer>
+  </body>
+</html>

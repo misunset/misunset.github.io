@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미선 웹 | 퍼블리셔</title>
+    <!-- 구글 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/css_story.css">   
+    <link rel="icon" type="image/png" href="./images/logo-lamp.png">
+    <!-- 자바스크립트 -->  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/script_story.js"></script>
+</head>
+<body>
+
+  <!-- header start! -->
+  <header>
+    <div id="header-wrap">
+      <div id="logo">
+        <a href="index.html"><img src="./images/logo.png" alt="mynamelogo"></a>
+      </div> <!--#logo-->
+      <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index_story.html">Story</a></li>
+        <li><a href="index_works.html">Works</a></li>
+        <li><a href="index_contact.html">Contact</a></li>
+      </ul> <!--#nav-->
+    </div><!--#header-wrap-->
+  </header>
+
+  <!-- banner start! -->
+  <section id="banner">
+    
+    <div id="content-wrap1">
+      <h1>
+          '나' 란 <br>
+          사람.
+      </h1>
+      <div id="scrolldown">
+          <div class="scroll">
+              <span class="wheel"></span>
+          </div><!--.scroll-->
+      </div><!--#scrolldown-->
+    </div><!--#content-wrap1-->
+
+  </section><!--#banner-->
+
+  <main id="main">
+    
+  <!-- introduce start! -->
+    <section id="introduce">
+      <div id="content-wrap2">
+        <ul id="introduce-text">
+          <li class="text con hidden">
+              <h3>전등처럼 빛나리</h3>
+              <p>하루종일 환한 전등을 켜 놓은 듯한 긍정에너지 이미선입니다.</p>
+          </li>
+          <li class="text con hidden">
+              <h3>필요한 인재로</h3>
+              <p>
+                  전등에 들어가는 전구는 아주 작은 사물임에도<br>
+                  존재감은 작지 않듯,<br>
+                  조직 내에서 꼭 필요한 사람이 되겠습니다.
+              </p>
+          </li>
+          <li class="text con hidden">
+              <h3>열정 넘치게</h3>
+              <p>
+                  활력을 잃은 공간에 활기를 불어 넣어주고<br>
+                  실내, 실외 어디든 우리의 일상을 밝혀주듯<br>
+                  일상생활에서 무엇인가에 대한 강한 관심과 집중,<br>
+                  발견하는 모습을 보여드리겠습니다.
+              </p>
+          </li>
+        </ul><!--#introduce-text-->
+        <div id="lightimage">
+          <div id="street-on">
+            <img src="./images/story-lighton.png" alt="streetlight">
+          </div><!--street-on-->
+        </div><!--#lightimage-->
+      </div> <!--#content-wrap2-->
+    </section> <!--#introduce-->
+
+    <!-- profile.bgchange start! -->
+    <section id="profile">
+      <ul id="content-wrap3">
+        <li class="profile-who con hidden">
+          <img src="./images/story_lamp.png" alt="minilamp">
+          <h3>성장하는</h3>
+          <img class="imoji" src="./images/growup.png" alt="growup">
+          <div id="growup-text">  
+              다양한 사람들로부터<br>
+              자극받으며<br>
+              새로운 발상으로<br>
+              접근하는 것을<br>
+              좋아합니다.
+          </div><!--#growup-text-->
+        </li><!--.profile-who-->
+        <li class="profile-who con hidden">
+          <img src="./images/story_lamp.png" alt="minilamp">
+          <h3>도전적인</h3>
+          <img class="imoji" src="./images/challenge.png" alt="challenge">
+          <div>
+              새로운 것을 찾아서,<br>
+              도전하는 것을 좋아하며<br>
+              문제를 해결하는 능력을<br>
+              갖추었습니다.
+          </div>
+        </li><!--.profile-who-->
+        <li class="profile-who con hidden">
+          <img src="./images/story_lamp.png" alt="minilamp">
+          <h3>배려하는</h3>
+          <img class="imoji warmth" src="./images/warm.png" alt="warmth">
+          <div id="warmth-text">
+              존중, 배려의 아이콘.<br>
+              빛처럼 따뜻하게 다가가<br>
+              사람을 대합니다.
+          </div><!--#warmth-text-->
+        </li><!--.profile-who-->
+      </ul> <!--#content-wrap3>-->
+    
+      <div id="content-wrap4">
+        <div id="profile-me">
+          <img src="./images/profile.png" alt="me">
+        </div><!--#profile-me-->
+        <ul class="profile-text con hidden">
+          <li>
+            <h4>이미선</h4>
+            <ul class="me-text">
+              <li>1998. 09. 29</li>
+            </ul>
+          </li>
+          <li>
+            <h4>자격증</h4>
+            <ul class="me-text">
+              <li>2020.11<span>컴퓨터활용능력 1급</span></li>
+              <li>2022.08<span>컴퓨터그래픽스운용기능사</span></li>
+              <li>2022.12<span>GTQ(그래픽기술자격) 1급</span></li>
+              <li>2023.04<span>웹디자인기능사</span></li>
+            </ul>
+          </li>
+          <li>
+            <h4>경험</h4>
+            <ul class="me-text">
+              <li>2022. 03~ 2022. 12<span>'디자인네이처' SNS 마케팅&쇼핑몰 관리</span></li>
+            </ul>
+          </li>
+        </ul><!--#profile-text-->
+      </div><!--#content-wrap4-->
+
+    </section> <!--#profile-->
+  </main><!--#main-->
+
+   <!-- skills start! -->
+   <section id="skills">
+    <div id="content-wrap5">
+      <h3>기술들</h3>
+      <ul id="skills-wrap">
+          <li class="skill ps">
+              <img src="./images/ps-01.png" alt="photoshop">
+              <div class="skills-lamp">
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp"> 
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+              </div><!--.skills-light-->
+          </li><!--.skill ps-->
+          <li class="skill ai">
+              <img src="./images/ai-01.png" alt="illustrator">
+              <div class="skills-lamp">
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp"> 
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+              </div><!--.skills-light-->
+          </li><!--.skill ai-->
+          <li class="skill html">
+              <img src="./images/html-01.png" alt="html">
+              <div class="skills-lamp">
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp"> 
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class=>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class=>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+              </div>
+          </li>
+          <li class="skill css">
+              <img src="./images/css-01.png" alt="css">
+              <div class="skills-lamp">
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp"> 
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+              </div> <!--.skills-light-->
+          </li><!--.skill css-->
+          <li class="skill jquery">
+              <img src="./images/jquery-01.png" alt="jquery">
+              <div class="skills-lamp">
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp"> 
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span class="light">
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+                  <span>
+                      <img src="./images/skills_lamp.png" alt="lamp">
+                  </span>
+              </div> <!--.skills-light-->
+          </li> <!--.skill jquery-->
+      </ul><!--#skills-wrap-->
+    </div><!--#content-wrap5-->
+  </section> <!--#skills-->
+</body>
+</html>

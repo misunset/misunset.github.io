@@ -1,0 +1,277 @@
+@media screen and (min-width: 1920px) {
+  #section1 {
+    height: 1200px;
+  }
+  /* mobile */
+  .btn-mo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px){
+  /* header */ 
+  #asiana-logo > img {
+    width: 200px; 
+  }
+  #nav-wrap {
+    width: 0;
+  }
+  #nav-menus, .btn-w {
+    display: none;
+  }
+  /* mobile */
+  .btn-mo {
+    width: 30px; height: 30px;
+    position: absolute;
+    right: 1em;
+  }
+  /* section1 */
+  #section1 {
+    margin-bottom: 5em;
+  }
+  #redbox {
+    width: 40em; height: 35em;
+    padding: 3em;
+    box-sizing: border-box;
+    left: 50%; transform: translateX(-50%);
+  }
+  #better-h1 > h1 {
+    font-size: 4em;
+    line-height: 1.1;
+  }
+  #better-h1 > p {
+    font-size: 1.75em;
+  }
+  #better-airplane {
+    margin: 45% 0 10%;
+  }
+  #better-airplane > img {
+    width: 130%;
+    margin-left: -40%;
+  }
+  /* section2 */
+ #start-imgbx {
+  width: 100%;
+  height: 40%;
+ }
+ #start-h2 {
+  padding: 4em;
+  bottom: auto;
+  z-index: 1;
+ }
+ .con-wrap h2 {
+  font-size: 5em;
+  line-height: 90px;
+ }
+ #start-h2 > h2 {
+  color: #ebf4ff;
+  text-align: left;
+  text-shadow: -.08em .08em #55a0e9;
+ }
+ .con-wrap p {
+  font-size: 1.1em;
+ }
+ #start-h2 p {
+  text-align: left;
+ }
+ .safety-left {
+  width: 100%;
+  left: 0;
+ }
+ .safety-right {
+  width: 100%;
+  left: 0;
+ }
+ #safety-h2 {
+  width: 50%;
+  top: 3em;
+  bottom: 3em;
+  left: 0;
+  color: white;
+  margin: 0 auto;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+ }
+ #safety-h2 > h2 {
+  margin-top: 1.5em;
+  text-shadow: -0.08em 0.08em #242424;
+ }
+ #safety-imgbx {
+  width: 90%;
+  margin: auto;
+ }
+ #safety-imgbx > img {
+  padding: 3em 0;
+ } 
+ /* section3 */
+ #service-bg {
+  height: 50em;
+  margin: 5em;
+ }
+ #service-h2 > h2 {
+  color: #70574e;
+  text-shadow: -0.08em 0.08em #b9b09d;
+ }
+ #service-h2 > p{
+  padding: 0 20%;
+ }
+ .four {
+  background-size: cover;
+  height: 1160px;
+ }
+ #four-texts > li {
+  width: 45%;
+  height: 600px;
+ }
+ #four-texts > li:nth-child(even) {
+  margin-right: 0%;
+ }
+ #four-texts > li:nth-child(odd) {
+  margin-right: 10%;
+ }
+ /* footer */
+ #ft-menu {
+  padding-bottom: 3em;
+ }
+ .ft-4 {
+  float: inherit;
+ }
+ .ft-4:not(:last-child){
+  margin-bottom: 4em;
+ }
+ .ft-4 > a {
+  float: left;
+  margin-right: 3%;
+ }
+ #sns-wrap {
+  margin: 0;
+  width: 100%;
+  margin-left: 3.5em;
+ }
+ #copy {
+  padding: 3.5em;
+  text-align: left;
+ }
+}
+@media screen and (max-width: 1920px) and (min-width: 1024px) {
+  #section1 {
+    height: 950px;
+  }
+  /* mobile */
+  .btn-mo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #nav-menus {
+    font-size: 1em;
+  }
+  #banner-h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* */
+@media screen and (max-width:647px){
+  #asiana-logo > img {
+    width: 150px;
+    padding: 10%;
+  }
+  #banner-h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+  #banner-h1 > h1 {
+    margin-bottom: 0.5em;
+    display: block;
+  }
+  #banner-h1 > p {
+    margin-right: 3%;
+  }
+  #banner-h1 > p > span {
+    letter-spacing: -3px;
+  }
+  #section1 {
+    height: 600px;
+  }
+  #redbox {
+    width: 100%; height: 70%;
+    padding: 15% 5%;
+  }
+  #better-h1 > h1 {
+    font-size: 2.8em;
+  }
+  #better-h1 > p {
+    font-size: 1em;
+  }
+  #better-airplane {
+    margin-top: 400px;
+  }
+  .mo-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, #b6dbff);
+    position: absolute;
+  } 
+  .con-wrap h2 {
+    font-size: 3.4em;
+    line-height: 1.3;
+   }
+  .con-wrap p {
+  font-size: 0.9em;
+  }
+  #start-h2 {
+    padding: 8%;
+    color: #222;
+  }
+  #start-h2 > h2 {
+    text-shadow: -0.08em 0.08em #437bb9;
+    color: #fff;
+  }
+  #start-imgbx {
+    width: 100%;
+    height: 500px;
+  }
+  #start-imgbx > img {
+  width: auto;
+  margin-top: 0;
+  }
+  #safety-imgbx > img {
+  padding: 1.5em 0;
+  }
+  #safety-h2 {
+  width: 84%;
+  bottom: 1.5em;
+  }
+  #safety-h2 > h2 {
+    margin-top: 3.5em;
+  }
+  #safety-h2 > p {
+  padding: 10%;
+}
+  #service-bg {
+  height: 40em;
+  margin: 0 0 3em;
+  }
+  #service-h2 {
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), transparent);
+  margin-top: -12em;
+}
+  #service-h2 > h2 {
+    color: #e8e8e8;
+    text-shadow: -0.08em 0.08em #887765;
+    line-height: 2.5;
+    margin-bottom: 1em;
+  }
+  .window-text {
+    height: 400px;
+    margin-top: -2em;
+  }
+  .window-text > h3 {
+    font-size: 2em;
+  }
+  .nb {
+    font-size: 6em;
+  }
+  .ft-4, #copy {
+    font-size: 0.8em;
+  }
+} 
