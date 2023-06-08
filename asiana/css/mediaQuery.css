@@ -175,6 +175,9 @@
     width: 150px;
     padding: 10%;
   }
+  #banner {
+    height: 80%;
+  }
   #banner-h1 {
     font-size: 2em;
     line-height: 1.2;
