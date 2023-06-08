@@ -234,30 +234,30 @@
     height: 500px;
   }
   #start-imgbx > img {
-  width: auto;
-  margin-top: 0;
+    width: auto;
+    margin-top: 0;
   }
   #safety-imgbx > img {
-  padding: 1.5em 0;
+    padding: 1.5em 0;
   }
   #safety-h2 {
-  width: 84%;
-  bottom: 1.5em;
+    width: 84%;
+    bottom: 1.5em;
   }
   #safety-h2 > h2 {
     margin-top: 3.5em;
   }
   #safety-h2 > p {
-  padding: 10%;
-}
+    padding: 10%;
+  }
   #service-bg {
-  height: 40em;
-  margin: 0 0 3em;
+    height: 40em;
+    margin: 0 0 3em;
   }
   #service-h2 {
-  background: linear-gradient(180deg, rgba(0,0,0,0.5), transparent);
-  margin-top: -12em;
-}
+    background: linear-gradient(180deg, rgba(0,0,0,0.5), transparent);
+    margin-top: -12em;
+  }
   #service-h2 > h2 {
     color: #e8e8e8;
     text-shadow: -0.08em 0.08em #887765;

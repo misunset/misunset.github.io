@@ -116,6 +116,7 @@ header.head_fix { /* 움직이면 header fixed */
 #banner {
   height: 100%;
   position: relative;
+  transition: all 0.5s;
 }
 #banner-bg {
   background-image: url('../images/asiana-banner.jpg');
