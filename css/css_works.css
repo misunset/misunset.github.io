@@ -110,10 +110,10 @@ body, html {
 .con {
   width: 400px; height: 400px;
   position: absolute;
+  overflow: hidden;
 }
 
 .thumb {
-  width: 100%;
   position: absolute;
   top: 0; left: 0;
   box-sizing: border-box;
@@ -184,6 +184,9 @@ body, html {
 .w3 {
   top: 450px; left: 800px; 
 }
+.w3 h3 > span {
+  font-size: 0.8em;
+}
 .w4 {
   left: 400px;
 }
@@ -196,8 +199,7 @@ body, html {
   left: 50px;
 }
 .w7 {
-  top: 850px;
-  background-color: blueviolet;
+  top: 700px; left: 450px;
 }
 
 

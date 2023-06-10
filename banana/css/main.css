@@ -57,8 +57,9 @@ header.fixed + section {
   font-size: 16px;
   text-align: center;
 }
-#nav > ul > li:hover > a {
+#nav > ul > li:nth-child(odd) > a:hover { /* content 있는 부분만 호버되게 하기 */
   color: #d3372a;
+  font-weight: 500;
 }
 #nav::after {
   content: ""; display: block; clear: both;
