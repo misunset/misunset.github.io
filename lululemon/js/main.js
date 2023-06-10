@@ -35,7 +35,7 @@ $(function(){
   });
 
 
-  $window.scroll(function(){
+  $window.on('scroll',function(){
     bannerfixed();
     fadeIn();
     accessorySmall();
@@ -82,7 +82,7 @@ $(function(){
   var $accessoryArea = $('#accessoryItem');
   // 액세서리를 감싸는 전체 태그 
 
-  var $accessoryOffset = $accessoryArea.offset().top +50;
+  var $accessoryOffset = $accessoryArea.offset().top + 50;
   // 액세서리가 처음 시작하는 위치
 
   var $accessoryMen = $('#accessoryMen');
