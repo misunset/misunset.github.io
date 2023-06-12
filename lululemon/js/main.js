@@ -2,7 +2,6 @@
 $(function(){
   var $window = $(window);
   var $seasonItem = $('#seasonItem');
-  var seasonOffset = $seasonItem.offset().top;
   var $bannerlast = $('#banner-wrap > img:last-child');
   var bannerHeight = $bannerlast.height();
   var bannerOffset = $bannerlast.offset().top;
@@ -12,27 +11,6 @@ $(function(){
 
   var $tennisSlide = $('#womanImage > ul');
   var interval = 3000;
-
-  var $agreeall = $('#allagree');
-  var $argeeper = $('.peragree');
-
-  $agreeall.click(function(){
-    var allChk = $(this).is(":checked");
-    if (allChk) {
-      $argeeper.prop('checked', true);
-    } else {
-      $argeeper.prop('checked', false);
-    }
-  });
-  $argeeper.on('change', function() { // chkControl 체크박스(모두 동의 아래의 체크박스)의 상태가 바뀔때
-    var chkLength = $(".peragree:checked").length; // 체크된 chkControl 체크박스의 개수
-    var chk_ctrl = $argeeper.length; // 전체 체크박스의 개수
-    if(chk_ctrl == chkLength){ // 체크된 chkControl 체크박스의 개수와 전체 chkControl 체크박스의 개수가 동일하다면(전부 다 체크됐다면)
-        $agreeall.prop('checked',true); // 모두동의 체크박스도 선택됨
-    }else{ // 반대의 경우(전체가 체크된 상태가 아니라면)
-        $agreeall.prop('checked',false); // 모두동의 체크박스 해제됨
-    }
-  });
 
 
   $window.on('scroll',function(){
@@ -54,11 +32,12 @@ $(function(){
       $bannerlast.removeClass('fixed');
       $seasonItem.css('margin-top','');
     }
-    if (scrollOffset > seasonOffset) {
+    if (scrollOffset > (bannerHeight + bannerOffset)) {
       $bannerlast.fadeOut();
     } else {
       $bannerlast.fadeIn();
     }
+    console.log(bannerHeight + bannerOffset);
   };
 
   function fadeIn (){
@@ -75,10 +54,6 @@ $(function(){
     }*/
   }
 
-  // accessoryMenImg 작아지는 효과
-  // 스크롤이 액세서리 위치값보다 높아진 상태에서,
-  // 휠을 아래로 굴리면 이미지가 비율에 따라 작아진다.
-  
   var $accessoryArea = $('#accessoryItem');
   // 액세서리를 감싸는 전체 태그 
 
@@ -119,6 +94,28 @@ $(function(){
       .next().fadeIn(1000)
       .end().appendTo($tennisSlide);
   }
+
+
+  var $agreeall = $('#allagree');
+  var $argeeper = $('.peragree');
+
+  $agreeall.click(function(){
+    var allChk = $(this).is(":checked");
+    if (allChk) {
+      $argeeper.prop('checked', true);
+    } else {
+      $argeeper.prop('checked', false);
+    }
+  });
+  $argeeper.on('change', function() { // chkControl 체크박스(모두 동의 아래의 체크박스)의 상태가 바뀔때
+    var chkLength = $(".peragree:checked").length; // 체크된 체크박스의 개수
+    var chk_ctrl = $argeeper.length; // 전체 체크박스의 개수
+    if (chk_ctrl == chkLength) { // 체크된 체크박스의 개수와 전체 체크박스의 개수가 동일하다면(전부 다 체크됐다면)
+      $agreeall.prop('checked',true); // 모두동의 체크박스도 선택됨
+    } else { // 반대의 경우(전체가 체크된 상태가 아니라면)
+      $agreeall.prop('checked',false); // 모두동의 체크박스 해제됨
+    }
+  });
 });
 
 
