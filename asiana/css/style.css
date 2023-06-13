@@ -290,7 +290,10 @@ header.head_fix { /* 움직이면 header fixed */
   font-size: 3.75em;
   line-height: 60px;
   margin-bottom: 2.5rem;
-  text-shadow: -.08em .08em #bad2e3; 
+  color: #e4edf2;
+  text-shadow:   -.04em .04em #727272, -.05em .05em #727272, -.07em .07em #727272, 
+  -.06em .06em #727272, -.08em .08em #727272, -.09em .09em #727272, 
+  -.1em .1em #727272,  -.11em .11em #727272, -.12em .12em #727272; 
   /* text-shadow: #a6d7f8 1px 1px,#a6d7f8 -0px 0px,
   #a6d7f8 -1px 1px,#a6d7f8 -2px 2px,#a6d7f8 -3px 3px,
   #a6d7f8 -4px 4px,#a6d7f8 -5px 5px,#a6d7f8 -6px 6px,
